@@ -8,11 +8,11 @@ export default class MenuBar extends React.Component {
 
     handleClick(recipeKey) {
         this.props.changeRecipe(recipeKey);
+        this.props.changeServingSize(this.props.recipes[recipeKey].servingSize);
     }
 
     render() {
         const recipes = this.props.recipes;
-        const changeRecipe = this.props.changeRecipe;
         return (
             <div className="menu">
                 <h1>Reciplz</h1>
@@ -24,7 +24,7 @@ export default class MenuBar extends React.Component {
                     })}
                 </ul>
 
-                <h3>Search</h3>
+                {/*<h3>Search</h3>*/}
             </div>
         )
     }

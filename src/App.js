@@ -8,7 +8,7 @@ export default class App extends React.Component {
         super(props);
         this.state = {
             selectedRecipe: "chocolateChipCookies",
-            servingSize: ""
+            servingSize: "3"
         };
         this.changeServingSize = this.changeServingSize.bind(this);
         this.changeRecipe = this.changeRecipe.bind(this);
