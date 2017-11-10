@@ -3,3 +3,24 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.menu {
+  width: 20%;
+  float: left;
+}
+
+.recipe {
+  width: 75%;
+  float: right;
+}
+
+.recipeDetails {
+  width: 50%;
+  float: left;
+}
+
+.recipeInstructions, .recipeIngredients {
+  width: 50%;
+  float: right;
+}
+
